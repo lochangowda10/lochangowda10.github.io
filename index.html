@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lochan Gowda T M · AI &amp; Data Science Student, Bengaluru</title>
+<meta name="description" content="Portfolio of Lochan Gowda T M, AI &amp; Data Science student at BMS College of Engineering, Bengaluru. 17 projects and 12+ hackathons in first year: LLM apps, ML pipelines, multi-agent systems. Open to AI/ML and SWE internships.">
+<meta name="author" content="Lochan Gowda T M">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#F7F8F4">
+<link rel="canonical" href="https://lochangowda10.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Lochan Line">
+<meta property="og:title" content="Lochan Gowda T M · The Lochan Line">
+<meta property="og:description" content="A portfolio you ride like a Bengaluru metro line: 17 projects, 12+ first-year hackathons, one Datathon win. AI/ML and SWE internships welcome.">
+<meta property="og:url" content="https://lochangowda10.github.io/">
+<meta property="og:image" content="https://lochangowda10.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Lochan Line: portfolio of Lochan Gowda T M">
+<meta property="og:locale" content="en_IN">
+<meta property="profile:first_name" content="Lochan">
+<meta property="profile:last_name" content="Gowda T M">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@_lochangowda">
+<meta name="twitter:creator" content="@_lochangowda">
+<meta name="twitter:title" content="Lochan Gowda T M · The Lochan Line">
+<meta name="twitter:description" content="17 projects, 12+ first-year hackathons, one Datathon win. Ride the line.">
+<meta name="twitter:image" content="https://lochangowda10.github.io/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://lochangowda10.github.io/#me", "name": "Lochan Gowda T M", "alternateName": "Lochan Gowda", "url": "https://lochangowda10.github.io/", "image": "https://lochangowda10.github.io/avatar.jpg", "email": "mailto:10lochangowda@gmail.com", "jobTitle": "AI & Data Science Student", "description": "B.Tech student in Artificial Intelligence and Data Science at BMS College of Engineering, Bengaluru, building LLM apps, ML pipelines and full-stack products.", "address": {"@type": "PostalAddress", "addressLocality": "Bengaluru", "addressRegion": "Karnataka", "addressCountry": "IN"}, "affiliation": {"@type": "CollegeOrUniversity", "name": "BMS College of Engineering", "url": "https://bmsce.ac.in"}, "award": "Winner, BMS College of Engineering Datathon", "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Large Language Models", "Multi-agent systems", "Python", "TypeScript", "React", "Next.js", "FastAPI", "scikit-learn", "XGBoost", "Data Science"], "sameAs": ["https://github.com/lochangowda10", "https://linkedin.com/in/lochangowda10", "https://x.com/_lochangowda", "https://instagram.com/_lochangowda"]}, {"@type": "ProfilePage", "@id": "https://lochangowda10.github.io/#page", "url": "https://lochangowda10.github.io/", "name": "Lochan Gowda T M · Portfolio", "inLanguage": "en-IN", "mainEntity": {"@id": "https://lochangowda10.github.io/#me"}, "dateModified": "2026-10-22"}]}</script>
+<!-- analytics: set UMAMI_WEBSITE_ID in build.py to enable -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Kannada:wght@500;700&display=swap">
+<script>try{if(localStorage.getItem('lochan-theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
+<!--HEAD-END-->
+<style>
+/* Layout: a single metro route. Hero = platform, departure board = station display,
+   projects = stations grouped into fare zones on a vertical line that fills as you ride,
+   big builds = platforms with diagrams, skills = interactive system map, contact = terminal. */
+:root{
+  --paper:#F7F8F4; --paper-2:#EEF0EA; --ink:#17151C; --ink-2:#55525E; --rule:#D5D8CF;
+  --purple:#6B2D90; --green:#0B7A41; --yellow:#E3A400; --pink:#C8135F; --blue:#1E5DB0;
+  --on-accent:#FFFFFF;
+  --wash-a:rgba(107,45,144,.13); --wash-b:rgba(11,122,65,.09); --wash-c:rgba(227,164,0,.10);
+  --lift:0 1px 0 rgba(23,21,28,.04),0 18px 40px -28px rgba(46,14,71,.35);
+  --board:#121015; --cell:#1D1A21; --cell-split:#0A090C; --amber:#FFB01F; --board-dim:#7B7584;
+  --card-a:#6B2D90; --card-b:#2E0E47; --on-card:#F7F1FB;
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --f-body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --f-kn:"Noto Sans Kannada","Tunga",sans-serif;
+  --gutter:clamp(16px,4vw,48px);
+  --max:1180px;
+}
+/* Light is the default look. Dark is opt-in through the toggle in the bar. */
+:root[data-theme="dark"]{
+  --paper:#0F0E12; --paper-2:#19171E; --ink:#EDEBF2; --ink-2:#A39FAE; --rule:#2D2A35;
+  --purple:#B47DE3; --green:#3CC781; --yellow:#F2C232; --pink:#F2599E; --blue:#72A6F2;
+  --on-accent:#0F0E12; --board:#060507; --cell:#16141A; --cell-split:#000;
+  --wash-a:rgba(180,125,227,.12); --wash-b:rgba(60,199,129,.07); --wash-c:rgba(242,194,50,.06);
+  --lift:0 18px 40px -28px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.kn{font-family:var(--f-kn);letter-spacing:0;text-transform:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+h1,h2,h3{text-wrap:balance;margin:0}
+
+/* ---------- top bar + in-train LED strip ---------- */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 15px/1 var(--f-display);font-stretch:112%;letter-spacing:.02em;text-transform:uppercase;flex:none}
+.roundel{width:28px;height:28px;border-radius:50%;background:var(--purple);color:var(--on-accent);display:grid;place-items:center;font:900 15px/1 var(--f-display);flex:none}
+.next{flex:1;min-width:0;display:flex;align-items:center;gap:10px;color:var(--ink-2);white-space:nowrap;overflow:hidden}
+.next b{color:var(--ink);font-weight:600;overflow:hidden;text-overflow:ellipsis}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--green);flex:none;box-shadow:0 0 0 0 var(--green);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{text-decoration:none;color:var(--ink-2)}
+.nav a:hover{color:var(--ink)}
+.sound{background:none;border:1px solid var(--rule);border-radius:999px;padding:6px 11px;cursor:pointer;color:var(--ink-2)}
+.sound[aria-pressed="true"]{border-color:var(--ink);color:var(--ink)}
+@media (max-width:860px){.nav a{display:none}.bar .wrap{gap:12px}.nav{gap:8px}}
+@media (max-width:420px){.logo{font-size:0;gap:0}.sound{padding:6px 9px}}
+@media (max-width:480px){.next .lbl{display:none}}
+
+.led{display:none;background:var(--board);color:var(--amber);border-top:1px solid #000;
+  background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1.2px);background-size:3px 3px}
+.bar.riding .led{display:block}
+.led .wrap{height:42px;display:flex;align-items:center;gap:18px}
+.led-text{flex:1;min-width:0;display:flex;gap:10px;align-items:center;white-space:nowrap;overflow:hidden;font:600 13px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;text-shadow:0 0 6px rgba(255,176,31,.55)}
+.led-text .kn{font-size:13px;font-weight:700}
+.led-text .dim{color:var(--board-dim);text-shadow:none}
+.led-text b{overflow:hidden;text-overflow:ellipsis}
+.led-text.ix b::after{content:" · Interchange · Doors open on the left";color:#5BE39A;text-shadow:0 0 6px rgba(91,227,154,.5)}
+.ledots{display:flex;align-items:center;gap:5px;flex:none}
+.ledots i{width:8px;height:8px;border-radius:50%;background:#3A3540;display:block}
+.ledots i.gap{margin-left:9px}
+.ledots i.p{background:#8A6420}
+.ledots i.h{background:var(--amber);box-shadow:0 0 8px var(--amber);animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:.35}}
+@media (max-width:720px){.ledots{display:none}.led-text.ix b::after{content:" · Interchange"}}
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(40px,7vw,96px) clamp(32px,5vw,64px);
+  background:radial-gradient(42% 60% at 82% 38%,var(--wash-a),transparent 70%),radial-gradient(36% 50% at 4% 0%,var(--wash-b),transparent 70%),radial-gradient(30% 40% at 60% 100%,var(--wash-c),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+.platform{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--ink-2);margin-bottom:22px}
+.platform span{display:inline-flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.hello{font:700 clamp(20px,2.4vw,28px)/1.2 var(--f-kn);color:var(--purple);margin:0 0 6px}
+.hello em{font:500 .8em var(--f-body);font-style:normal;color:var(--ink-2)}
+.name{font-family:var(--f-display);font-weight:900;font-stretch:125%;text-transform:uppercase;font-size:clamp(54px,10.5vw,150px);line-height:.84;letter-spacing:-.025em}
+.name span{display:block}
+.name .l2{display:flex;align-items:flex-end;gap:.18em}
+.name .l2 .g{background:linear-gradient(92deg,var(--purple) 0%,var(--pink) 62%,#E07A00 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.04em}
+.name .tm{font-size:.22em;font-stretch:100%;font-weight:700;color:var(--ink-2);letter-spacing:.05em;line-height:1;padding-bottom:.55em}
+.lede{font-size:clamp(17px,1.6vw,20px);max-width:36em;margin:28px 0 0}
+.lede strong{font-weight:600}
+.ai-note{max-width:38em;margin:16px 0 0;padding:12px 16px;border:1px dashed var(--ink-2);font-size:15px;color:var(--ink-2)}
+.ai-note b{color:var(--ink);font-weight:600}
+.facts{display:flex;flex-wrap:wrap;margin:28px 0 0;padding:0;list-style:none;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.facts li{flex:1 1 120px;padding:14px 18px 14px 0;display:flex;flex-direction:column;gap:2px}
+.facts li+li{padding-left:18px;border-left:1px solid var(--rule)}
+.facts b{font:800 28px/1 var(--f-display);font-stretch:110%;font-variant-numeric:tabular-nums}
+.facts span{color:var(--ink-2);font-size:13px;line-height:1.3}
+@media (max-width:560px){.facts li{flex:1 1 40%}.facts li:nth-child(3){padding-left:0;border-left:0}.facts li:nth-child(n+3){border-top:1px solid var(--rule)}}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;font:600 15px/1 var(--f-body);text-decoration:none;border:2px solid var(--ink);border-radius:999px;transition:transform .15s ease,background .15s}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary:hover{background:var(--purple);border-color:var(--purple);color:var(--on-accent)}
+
+/* smart card: ISO/IEC 7810 ID-1, 85.60 x 53.98 mm */
+.card-stage{perspective:1100px;display:flex;flex-direction:column;align-items:center;gap:14px;margin:0}
+.pass{position:relative;width:100%;max-width:440px;aspect-ratio:85.6/53.98;border-radius:18px;color:var(--on-card);
+  background:radial-gradient(120% 140% at 0% 0%,var(--card-a) 0%,var(--card-b) 70%);
+  box-shadow:0 30px 60px -25px rgba(40,10,60,.55),0 2px 0 rgba(255,255,255,.08) inset;
+  transform:rotateX(var(--rx,6deg)) rotateY(var(--ry,-12deg)) rotate(-2deg);transition:transform .5s cubic-bezier(.2,.7,.2,1);
+  overflow:hidden;display:grid;grid-template-columns:34% 1fr;gap:4%;padding:5.5%}
+.pass.live{transition:transform .08s linear}
+.pass::before{content:"";position:absolute;inset:auto 0 18% 0;height:9%;background:#0B8A4A;opacity:.95}
+.pass::after{content:"";position:absolute;inset:0;pointer-events:none;mix-blend-mode:overlay;
+  background:radial-gradient(60% 60% at var(--gx,30%) var(--gy,20%),rgba(255,255,255,.55),transparent 60%)}
+.pass .photo{position:relative;z-index:1;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#2a0f3d;align-self:start;box-shadow:0 0 0 2px rgba(255,255,255,.18)}
+.pass .photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15) brightness(1.05)}
+.pass .photo::after{content:"";position:absolute;inset:0;background:var(--card-a);mix-blend-mode:color;opacity:.55}
+.pass .meta{position:relative;z-index:1;display:flex;flex-direction:column;min-width:0}
+.pass .issuer{font:800 clamp(9px,1.3vw,12px)/1 var(--f-display);font-stretch:118%;letter-spacing:.1em;text-transform:uppercase;opacity:.85;display:flex;justify-content:space-between;align-items:center;gap:6px}
+.chip{width:2.4em;height:1.8em;border-radius:.3em;background:linear-gradient(135deg,#E9C76B,#B48A2C);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25);position:relative;flex:none}
+.chip::before{content:"";position:absolute;inset:30% 0;border-block:1px solid rgba(0,0,0,.3)}
+.pass .who{margin-top:auto;font:800 clamp(12px,1.75vw,19px)/1.05 var(--f-display);font-stretch:100%;text-transform:uppercase;white-space:nowrap}
+.pass dl{display:grid;grid-template-columns:auto 1fr;gap:1px 10px;margin:8px 0 0;font:400 clamp(8px,1.05vw,10.5px)/1.5 var(--f-mono);text-transform:uppercase;letter-spacing:.06em}
+.pass dt{opacity:.6}.pass dd{margin:0}
+.pass .serial{position:absolute;z-index:1;left:5.5%;bottom:5%;font:400 clamp(8px,1vw,10px)/1 var(--f-mono);letter-spacing:.2em;opacity:.75}
+.tap{color:var(--ink-2)}
+@media (hover:none){.tap{display:none}}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.card-stage{align-items:flex-start}.pass{max-width:380px}}
+
+/* ---------- departure board ---------- */
+.board-band{background:var(--board);color:var(--amber);padding-block:22px}
+.board-head{display:flex;justify-content:space-between;gap:16px;color:var(--board-dim);margin-bottom:12px;flex-wrap:wrap}
+.board-head .clock{color:var(--amber);font-variant-numeric:tabular-nums}
+.board{display:grid;gap:6px;--cs:clamp(11px,2.1vw,22px)}
+.brow,.board-cols{display:flex;gap:clamp(8px,2vw,22px);align-items:center}
+.board-cols{color:var(--board-dim);margin-bottom:4px}
+.cells{display:flex;gap:2px}
+.cell{position:relative;width:1.05em;height:1.45em;display:grid;place-items:center;background:var(--cell);border-radius:2px;font:600 var(--cs)/1 var(--f-mono);color:var(--amber);text-transform:uppercase}
+.cell::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--cell-split)}
+.cell.flip{animation:flap .07s linear}
+@keyframes flap{50%{transform:scaleY(.15)}}
+.brow .status .cell{color:#ECEAF1}
+.brow.go .status .cell{color:#5BE39A}
+
+/* ---------- section signage ---------- */
+section{padding-block:clamp(64px,9vw,120px)}
+.sign{display:flex;align-items:center;gap:14px;margin-bottom:clamp(28px,4vw,48px);flex-wrap:wrap}
+.sign .roundel{width:40px;height:40px;font-size:18px}
+.sign h2{font:900 clamp(34px,5.5vw,64px)/.95 var(--f-display);font-stretch:118%;text-transform:uppercase;letter-spacing:-.015em}
+.sign .kn{font-size:clamp(18px,2vw,24px);color:var(--ink-2);font-weight:500}
+.intro{max-width:40em;font-size:clamp(18px,1.8vw,22px);line-height:1.5;margin:0 0 clamp(40px,6vw,72px)}
+
+/* ---------- the line ---------- */
+.route{--date-w:120px;--rail-w:56px;position:relative;max-width:1100px}
+.track,.fill{position:absolute;left:calc(var(--date-w) + var(--rail-w)/2 - 5px);width:10px;top:8px;bottom:0;border-radius:5px}
+.track{background:var(--rule)}
+.fill{background:var(--purple);clip-path:inset(0 0 100% 0)}
+.train{position:absolute;left:calc(var(--date-w) + var(--rail-w)/2 - 11px);top:0;width:22px;height:40px;border-radius:11px;background:var(--ink);z-index:3;box-shadow:0 6px 18px -6px rgba(0,0,0,.45);will-change:transform}
+.train::before{content:"";position:absolute;left:5px;right:5px;top:7px;height:9px;border-radius:3px;background:var(--yellow)}
+.train::after{content:"";position:absolute;left:9px;bottom:7px;width:4px;height:4px;border-radius:50%;background:var(--paper)}
+.stations{list-style:none;margin:0;padding:0;position:relative}
+.stn,.zone{display:grid;grid-template-columns:var(--date-w) var(--rail-w) minmax(0,1fr);grid-template-areas:"when node body"}
+.stn{padding-bottom:clamp(44px,6vw,72px)}
+.stn .when{grid-area:when;padding-top:6px;color:var(--ink-2);text-align:right;padding-right:6px;transition:color .3s}
+.stn .when b{display:block;color:var(--ink);font-weight:600}
+.node{grid-area:node;justify-self:center;margin-top:4px;width:24px;height:24px;border-radius:50%;background:var(--paper);border:5px solid var(--rule);position:relative;z-index:1;transition:border-color .3s,transform .3s,box-shadow .3s}
+.stn,.zone{--zc:var(--purple)}
+.stn.passed .node{border-color:var(--zc)}
+.stn.here .node{transform:scale(1.3);box-shadow:0 0 0 6px color-mix(in srgb,var(--zc) 22%,transparent)}
+.stn.here h3{color:var(--zc)}
+.stn.ix .node{width:32px;height:32px;margin-top:0;border-color:var(--ink);box-shadow:0 0 0 4px var(--paper),0 0 0 7px var(--ink)}
+.stn.ix.passed .node{border-color:var(--zc);box-shadow:0 0 0 4px var(--paper),0 0 0 7px var(--zc)}
+.stn.ix.here .node{transform:scale(1.15)}
+.stn.last .node{border-radius:6px;width:30px;height:30px;margin-top:2px}
+.body{grid-area:body;min-width:0;padding-left:clamp(8px,2vw,20px)}
+.code{color:var(--ink-2);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.tag{background:var(--yellow);color:#17151C;padding:3px 7px;font-weight:600}
+.tag.win{background:var(--green);color:var(--on-accent)}
+.stn h3{font:850 clamp(26px,3.6vw,40px)/1 var(--f-display);font-stretch:112%;text-transform:uppercase;letter-spacing:-.01em;margin:8px 0 6px;transition:color .3s}
+.event{font-weight:600;color:var(--zc);margin:0 0 10px;font-size:15px}
+.stn p.d{margin:0;max-width:38em}
+.learned{margin:14px 0 0;max-width:38em;display:flex;gap:12px;align-items:baseline;font-size:15.5px}
+.learned .mono{flex:none;background:var(--ink);color:var(--paper);padding:3px 7px;font-size:11px}
+.learned span:last-child{font-weight:500}
+.stack{margin:12px 0 0;color:var(--ink-2)}
+.links{display:flex;gap:18px;margin-top:12px;flex-wrap:wrap}
+.links a{font-weight:600;text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--purple)}
+.links a:hover{color:var(--purple)}
+.quote{font:800 clamp(20px,2.4vw,26px)/1.15 var(--f-display);font-stretch:105%;margin:14px 0 0}
+.figure{display:flex;flex-wrap:wrap;gap:8px 28px;margin:16px 0 4px;padding-top:14px;border-top:1px dashed var(--rule)}
+.figure div{display:flex;flex-direction:column}
+.figure b{font:850 30px/1 var(--f-display);font-stretch:110%;font-variant-numeric:tabular-nums}
+.figure span{font-size:13px;color:var(--ink-2)}
+
+/* platforms: interchange stations break out with a diagram */
+.stn.ix .body{background:linear-gradient(160deg,var(--paper) 0%,var(--paper-2) 100%);box-shadow:var(--lift);border:2px solid var(--ink);padding:clamp(18px,3vw,32px);margin-left:clamp(8px,2vw,20px);
+  display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(20px,3vw,40px);align-items:start}
+.pf-fig{min-width:0;border-left:1px dashed var(--rule);padding-left:clamp(16px,2.5vw,32px)}
+.pf-fig .cap{color:var(--ink-2);margin:10px 0 0;font-size:11px}
+@media (max-width:980px){.stn.ix .body{grid-template-columns:1fr}.pf-fig{border-left:0;padding-left:0;border-top:1px dashed var(--rule);padding-top:20px;max-width:440px}}
+
+.dg{width:100%;height:auto;display:block;overflow:visible}
+.dg text{fill:var(--ink-2);font:600 11px var(--f-mono);letter-spacing:.06em}
+.dg text.on{fill:var(--on-accent)}
+.dg .box{fill:var(--paper);stroke:var(--ink);stroke-width:2}
+.dg .box.hot{fill:var(--purple);stroke:var(--purple)}
+.dg .wire{fill:none;stroke:var(--purple);stroke-width:3;stroke-linejoin:round}
+.dg .tip{fill:var(--purple)}
+.dg .bar{fill:var(--ink-2)}
+.dg .bar.alt{fill:var(--purple)}
+.dg .axis{stroke:var(--rule);stroke-width:2}
+.dg .lamp{fill:var(--green);stroke:var(--ink);stroke-width:2}
+.dg .lamp.big{fill:var(--purple);stroke:var(--purple)}
+
+/* fare zones */
+.zone{padding-bottom:clamp(36px,5vw,56px);position:relative}
+.zone .zn{grid-area:when;text-align:right;padding-right:6px;font:900 clamp(64px,8vw,104px)/.8 var(--f-display);font-stretch:62%;color:transparent;-webkit-text-stroke:2px var(--zc)}
+.zone .zmark{grid-area:node;justify-self:center;width:34px;height:12px;background:var(--zc);position:relative;z-index:1;margin-top:10px}
+.zone .zbody{grid-area:body;padding-left:clamp(8px,2vw,20px);border-top:2px solid var(--ink);padding-top:12px;min-width:0}
+.zone .zlabel{color:var(--ink-2);display:flex;gap:12px;flex-wrap:wrap}
+.zone h3{font:900 clamp(30px,4.4vw,52px)/.95 var(--f-display);font-stretch:70%;text-transform:uppercase;color:var(--zc);margin:6px 0 6px}
+.zone p{margin:0;max-width:34em;color:var(--ink-2)}
+
+.branch{position:relative;margin-top:clamp(40px,6vw,72px);padding-left:calc(var(--date-w) + var(--rail-w));}
+.branch::before{content:"";position:absolute;left:calc(var(--date-w) + var(--rail-w)/2 - 2px);top:calc(-1 * clamp(40px,6vw,72px));bottom:0;border-left:4px dashed var(--ink-2)}
+.branch h3{font:800 20px/1.2 var(--f-display);font-stretch:112%;text-transform:uppercase;padding-left:clamp(8px,2vw,20px);margin-bottom:6px}
+.branch > p{padding-left:clamp(8px,2vw,20px);color:var(--ink-2);margin:0 0 18px}
+.branch ul{list-style:none;margin:0;padding:0 0 0 clamp(8px,2vw,20px);display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0 28px}
+.branch li{position:relative;padding:12px 0;min-width:0;border-bottom:1px solid var(--rule)}
+.branch a{font-weight:600;text-underline-offset:3px;display:block}
+.branch li span{color:var(--ink-2);font-size:13px}
+@media (max-width:700px){
+  .route{--date-w:0px;--rail-w:36px}
+  .stn{grid-template-columns:var(--rail-w) minmax(0,1fr);grid-template-areas:"node when" "node body"}
+  .stn .when{text-align:left;padding:0 0 0 14px;display:flex;gap:8px}
+  .stn .when b{display:inline}
+  .node{align-self:start}
+  .body{padding-left:14px}
+  .stn.ix .body{margin-left:14px;padding:18px}
+  .stn.ix .node{width:26px;height:26px}
+  .zone{grid-template-columns:var(--rail-w) minmax(0,1fr);grid-template-areas:"node body"}
+  .zone .zn{display:none}
+  .zone .zmark{width:26px}
+  .zone .zbody{padding-left:14px}
+  .branch{padding-left:var(--rail-w)}
+  .branch::before{left:calc(var(--rail-w)/2 - 2px)}
+  .branch h3,.branch > p,.branch ul{padding-left:14px}
+}
+
+/* ---------- city band with platform screen doors ---------- */
+.city{background:linear-gradient(115deg,var(--purple) 0%,color-mix(in srgb,var(--purple) 75%,var(--pink)) 65%,color-mix(in srgb,var(--purple) 60%,var(--pink)) 100%);color:var(--on-accent);position:relative;overflow:hidden}
+.city::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:var(--yellow);
+  -webkit-mask:radial-gradient(circle 2.5px,#000 96%,#0000) 0 0/10px 10px;mask:radial-gradient(circle 2.5px,#000 96%,#0000) 0 0/10px 10px}
+.city .wrap{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center}
+.city .big{font:900 clamp(64px,12vw,170px)/.8 var(--f-display);font-stretch:62%;letter-spacing:-.02em;text-transform:uppercase}
+.city p{font-size:clamp(19px,2.2vw,28px);line-height:1.35;margin:0;max-width:26em}
+.city ul{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.city li a{display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border:1.5px solid currentColor;border-radius:999px;text-decoration:none}
+.city li a:hover{background:var(--on-accent);color:var(--purple)}
+.door{display:none}
+@media (max-width:640px){.city .wrap{grid-template-columns:1fr}}
+
+/* ---------- system map ---------- */
+.map{display:grid;gap:clamp(24px,3vw,34px)}
+.mline{display:grid;grid-template-columns:190px minmax(0,1fr);gap:20px;align-items:start}
+.mline h3{font:800 17px/1.2 var(--f-display);font-stretch:112%;text-transform:uppercase;display:flex;align-items:center;gap:10px;padding-top:2px}
+.mline h3 .dot{width:14px;height:14px}
+.stops{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;row-gap:16px}
+.stops li{position:relative;padding:20px 20px 0 0}
+.stops li::before{content:"";position:absolute;left:0;right:0;top:6px;height:6px;background:var(--c)}
+.stops li:last-child::before{right:auto;width:16px}
+.stop{background:none;border:0;padding:0;cursor:pointer;font-weight:500;font-size:15px;white-space:nowrap;text-align:left}
+.stop::after{content:"";position:absolute;left:0;top:1px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:4px solid var(--c);box-sizing:border-box;transition:transform .2s}
+.stop .n{color:var(--ink-2);font:400 11px var(--f-mono);margin-left:4px}
+.stop:hover,.stop[aria-pressed="true"]{color:var(--purple)}
+.stop:hover::after,.stop[aria-pressed="true"]::after{transform:scale(1.35)}
+.stop[aria-pressed="true"]::after{background:var(--c)}
+.stops li.x .stop::after{border-color:var(--ink);box-shadow:0 0 0 2px var(--paper),0 0 0 4px var(--ink)}
+.map-foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(20px,4vw,48px);margin-top:clamp(32px,4vw,48px);align-items:start}
+.legend{color:var(--ink-2);display:flex;align-items:center;gap:10px;margin:0}
+.legend i{width:14px;height:14px;border-radius:50%;border:4px solid var(--ink);box-shadow:0 0 0 2px var(--paper),0 0 0 4px var(--ink);display:inline-block;flex:none}
+.panel{background:var(--board);color:#ECEAF1;padding:20px 22px;min-height:120px}
+.panel .ph{display:flex;justify-content:space-between;gap:12px;color:var(--amber);flex-wrap:wrap}
+.panel h4{margin:6px 0 10px;font:850 26px/1 var(--f-display);font-stretch:112%;text-transform:uppercase}
+.panel ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.panel li a{display:inline-block;padding:5px 10px;border:1px solid #4A4452;text-decoration:none;font-size:14px}
+.panel li a:hover{border-color:var(--amber);color:var(--amber)}
+.panel p{margin:0;color:#B9B4C2;font-size:15px}
+@media (max-width:760px){.mline{grid-template-columns:1fr;gap:6px}.map-foot{grid-template-columns:1fr}}
+
+/* ---------- tickets ---------- */
+.tickets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.ticket{position:relative;display:grid;grid-template-columns:58px minmax(0,1fr);background:linear-gradient(135deg,var(--paper-2),color-mix(in srgb,var(--paper-2) 92%,var(--purple)));border-radius:10px;min-height:180px;
+  -webkit-mask:radial-gradient(circle 12px at 58px 0,#0000 98%,#000) top/100% 51% no-repeat,radial-gradient(circle 12px at 58px 100%,#0000 98%,#000) bottom/100% 51% no-repeat;
+  mask:radial-gradient(circle 12px at 58px 0,#0000 98%,#000) top/100% 51% no-repeat,radial-gradient(circle 12px at 58px 100%,#0000 98%,#000) bottom/100% 51% no-repeat}
+.ticket.wide{grid-column:1/-1;min-height:220px}
+.ticket .stub{border-right:2px dashed var(--rule);display:grid;place-items:center;color:var(--ink-2)}
+.ticket .stub span{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap}
+.ticket .tb{padding:22px 24px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.ticket .tclass{display:flex;justify-content:space-between;gap:10px;color:var(--ink-2);flex-wrap:wrap}
+.ticket h3{font:850 clamp(22px,2.4vw,28px)/1.02 var(--f-display);font-stretch:112%;text-transform:uppercase}
+.ticket.wide h3{font-size:clamp(30px,4.4vw,56px)}
+.ticket p{margin:0;font-size:15.5px;max-width:44em}
+.ticket.gold .stub{background:var(--green);color:var(--on-accent);border-right-color:var(--paper-2);border-radius:10px 0 0 10px}
+.ticket a{font-weight:600;text-underline-offset:3px}
+.stamp{position:absolute;right:clamp(16px,4vw,48px);top:50%;translate:0 -50%;rotate:-9deg;border:3px solid var(--pink);color:var(--pink);padding:8px 14px;font:700 15px/1.1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;text-align:center;border-radius:6px;opacity:.9}
+.stamp small{display:block;font-size:10px;letter-spacing:.2em}
+@media (max-width:900px){.tickets{grid-template-columns:1fr}.stamp{position:static;translate:none;align-self:flex-start;margin-top:8px}}
+.tally{margin:28px 0 0;max-width:44em;color:var(--ink-2)}
+
+/* ---------- terminal ---------- */
+.terminal{--t-fg:#ECEAF1;--t-dim:#A7A2B0;--t-line:#34303B;background:var(--board);color:var(--t-fg)}
+.terminal .sign .kn{color:var(--t-dim)}
+.terminal h2.huge{font:900 clamp(40px,7.5vw,104px)/.92 var(--f-display);font-stretch:118%;text-transform:uppercase;letter-spacing:-.02em;max-width:12em}
+.terminal h2.huge em{font-style:normal;color:var(--yellow)}
+.terminal .sub{max-width:34em;font-size:clamp(17px,1.7vw,20px);margin:22px 0 40px;color:var(--t-dim)}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;padding-block:22px;border-block:1px solid var(--t-line)}
+.mail a{font:800 clamp(20px,3.6vw,40px)/1.1 var(--f-display);font-stretch:105%;text-decoration:none;overflow-wrap:anywhere}
+.mail a:hover{color:var(--yellow)}
+.copy{font:600 13px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;background:transparent;color:var(--t-fg);border:2px solid var(--t-fg);border-radius:999px;padding:10px 16px;cursor:pointer}
+.copy:hover{background:var(--t-fg);color:var(--board)}
+.socials{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-top:8px}
+.socials a{display:flex;flex-direction:column;gap:4px;padding:20px 18px 20px 0;text-decoration:none;border-bottom:1px solid var(--t-line)}
+.socials a b{font:800 20px/1 var(--f-display);font-stretch:112%;text-transform:uppercase}
+.socials a span{color:var(--t-dim);font-size:14px;overflow-wrap:anywhere}
+.socials a:hover b{color:var(--yellow)}
+footer{background:var(--board);color:#8D8897;padding-block:28px 40px;border-top:1px solid #24212A}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* ---------- scroll-driven extras (progressive; static final state is the default) ---------- */
+@media (prefers-reduced-motion:no-preference){
+  @supports (animation-timeline: view()){
+    .dg .grow{transform-box:fill-box;transform-origin:left;animation:grow linear both;animation-timeline:view();animation-range:entry 20% cover 45%}
+    .dg .wire{stroke-dasharray:1;animation:draw linear both;animation-timeline:view();animation-range:entry 15% cover 45%}
+    .dg .lamp{animation:lamp linear both;animation-timeline:view()}
+    .dg .l1{animation-range:entry 30% cover 35%}.dg .l2{animation-range:cover 30% cover 38%}.dg .l3{animation-range:cover 34% cover 42%}.dg .l4{animation-range:cover 42% cover 50%}
+    @keyframes grow{from{transform:scaleX(0)}}
+    @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+    @keyframes lamp{from{fill:var(--paper)}}
+    .door{display:block;position:absolute;top:0;bottom:14px;width:50.5%;z-index:2;background:var(--ink);pointer-events:none;animation:linear both;animation-timeline:view();animation-range:entry 45% cover 48%}
+    .door::before{content:"";position:absolute;top:22%;bottom:30%;width:34%;border:3px solid color-mix(in srgb,var(--paper) 30%,var(--ink));border-radius:8px}
+    .door::after{position:absolute;top:12%;font:700 12px var(--f-mono);letter-spacing:.2em;color:var(--yellow)}
+    .door.l{left:0;animation-name:openL;border-right:3px solid var(--yellow)}.door.l::before{right:14%}.door.l::after{content:"MIND";right:14%}
+    .door.r{right:0;animation-name:openR;border-left:3px solid var(--yellow)}.door.r::before{left:14%}.door.r::after{content:"THE GAP";left:14%}
+    @keyframes openL{to{transform:translateX(-101%)}}
+    @keyframes openR{to{transform:translateX(101%)}}
+    .stamp{animation:stamp linear both;animation-timeline:view();animation-range:entry 60% cover 40%}
+    @keyframes stamp{0%,40%{opacity:0;scale:1.6}100%{opacity:.9;scale:1}}
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+<!--STYLE-END-->
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="roundel">L</span>Lochan Line</a>
+    <div class="next mono"><span class="pulse"></span><span class="lbl">Next stop:</span> <b id="nextName">The Line</b></div>
+    <nav class="nav mono" aria-label="Sections">
+      <a href="#line">Projects</a><a href="#map">Skills</a><a href="#record">Record</a><a href="#terminal">Contact</a>
+      <button class="sound mono" id="theme" type="button" aria-label="Switch to dark theme">Dark</button>
+      <button class="sound mono" id="sound" type="button" aria-pressed="false">Sound: off</button>
+    </nav>
+  </div>
+  <div class="led" aria-hidden="true">
+    <div class="wrap">
+      <div class="led-text" id="ledText"><span class="kn" id="ledKn">ಮುಂದಿನ ನಿಲ್ದಾಣ</span><span class="dim" id="ledEn">Next station</span><b id="ledName"></b></div>
+      <div class="ledots" id="ledots"><i></i><i></i><i></i><i data-gap="1" class="gap"></i><i></i><i data-gap="1" class="gap"></i><i></i><i></i><i></i><i></i><i></i><i data-gap="1" class="gap"></i><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="platform mono">
+        <span><i class="dot" style="background:var(--purple)"></i>Platform 1</span>
+        <span>Bengaluru, India</span>
+        <span>AI &amp; Data Science · BMSCE</span>
+      </div>
+      <p class="hello">ನಮಸ್ಕಾರ<em>, I'm</em></p>
+      <h1 class="name"><span>Lochan</span><span class="l2"><span class="g">Gowda</span><span class="tm">T&nbsp;M</span></span></h1>
+      <p class="lede">I'm a second-year <strong>Artificial Intelligence &amp; Data Science</strong> student at BMS College of Engineering, still early and learning by doing. In my <strong>first year</strong> I said yes to every hackathon I could find, not to collect trophies but to learn fast. I won one, and every other one taught me something. Now I'm looking for an <strong>AI/ML or software engineering internship</strong>.</p>
+      <p class="ai-note"><b>How I build:</b> with AI coding tools like Claude Code. My part is choosing what to build, steering the AI, debugging, deploying, and understanding every piece well enough to explain it.</p>
+      <ul class="facts">
+        <li><b>9.55</b><span>CGPA after 2 semesters</span></li>
+        <li><b>17</b><span>projects on the line</span></li>
+        <li><b>12+</b><span>hackathons in first year</span></li>
+        <li><b>1</b><span>win: BMSCE Datathon</span></li>
+      </ul>
+      <div class="ctas">
+        <a class="btn primary" href="#line">Ride the line ↓</a>
+        <a class="btn" href="#terminal">Get in touch</a>
+        <a class="btn" href="Lochan_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+      </div>
+    </div>
+
+    <figure class="card-stage">
+      <div class="pass" id="pass" role="img" aria-label="Student pass for Lochan Gowda T M, from BMSCE to an AI/ML internship, valid 2025 to 2029">
+        <div class="photo"><img src="avatar.jpg" alt="" width="460" height="460"></div>
+        <div class="meta">
+          <div class="issuer"><span>Lochan Line · Student Pass</span><span class="chip" aria-hidden="true"></span></div>
+          <div class="who">Lochan Gowda T M</div>
+          <dl>
+            <dt>From</dt><dd>BMSCE, Basavanagudi</dd>
+            <dt>To</dt><dd>AI/ML Internship</dd>
+            <dt>Valid</dt><dd>2025 – 2029</dd>
+            <dt>Fare</dt><dd>Curiosity</dd>
+          </dl>
+        </div>
+        <div class="serial">GH · LOCHANGOWDA10</div>
+      </div>
+      <figcaption class="tap mono">Tap in: move your cursor over the pass</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- ================= DEPARTURE BOARD ================= -->
+<div class="board-band">
+  <div class="wrap">
+    <div class="board-head mono"><span>Departures · Lochan Line · Platform 1</span><span class="clock" id="clock">BLR --:-- IST</span></div>
+    <div class="board" id="board" role="img" aria-label="Departure board. First year: learning. Boarding: AI/ML internship. Next hackathon: on time."></div>
+  </div>
+</div>
+
+<!-- ================= THE LINE ================= -->
+<section id="line">
+  <div class="wrap">
+    <div class="sign"><span class="roundel">L</span><h2>The Line</h2><span class="kn">ಮಾರ್ಗ</span></div>
+    <p class="intro">Every project I've built since starting college, in order, split into four zones. Most came from hackathons I joined in my first year to learn. Each station says what it taught me. Ringed stations are interchanges: the biggest builds, with a look at how they work.</p>
+
+    <div class="route" id="route">
+      <div class="track"></div><div class="fill" id="fill"></div><div class="train" id="train" aria-hidden="true"></div>
+      <ol class="stations" role="list">
+        <li class="zone" style="--zc:var(--purple)" data-c="--purple" aria-label="Zone 1"><div class="zn" aria-hidden="true">1</div><span class="zmark" aria-hidden="true"></span><div class="zbody"><div class="zlabel mono"><span>Zone 1 · <span class="kn">ವಲಯ</span></span><span>Nov – Feb</span></div><h3>First steps</h3><p>A slide deck, then my first deployed app, then my first hackathon. I learned what it takes to put something online.</p></div></li>
+        <li class="stn" style="--zc:var(--purple)" id="stn-drone" data-name="AI Drone Detection" data-skills="yolo html git">
+          <div class="when mono"><b>Nov 2025</b>L01</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">Mini project</span></div>
+            <h3>AI Drone Detection</h3>
+            <p class="d">My first project: a low-cost, real-time drone detection concept for security monitoring using YOLOv8 on a Raspberry Pi. It&#x27;s a design and presentation, not a working build yet.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Scoping a system on paper first: the hardware, the model and the cost.</span></p>
+            <p class="stack mono">YOLOv8 / Raspberry Pi / Computer vision</p>
+            <div class="links"><a href="https://github.com/lochangowda10/Presentation-miniproject" target="_blank" rel="noopener">Slides &amp; write-up<span class="sr"> for AI Drone Detection (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn" style="--zc:var(--purple)" id="stn-spa" data-name="Student Performance Analyzer" data-skills="python streamlit pandas git">
+          <div class="when mono"><b>Jan 2026</b>L02</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">College assignment</span></div>
+            <h3>Student Performance Analyzer</h3>
+            <p class="d">Enter marks for five subjects and get a report card: percentage, grades on the university scale, and a chart of where you&#x27;re strong.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Turning a Python script into an app that other people can open in a browser.</span></p>
+            <p class="stack mono">Python / Streamlit / pandas / Matplotlib</p>
+            <div class="links"><a href="https://student1performance-analyzer-project.streamlit.app/" target="_blank" rel="noopener">Live<span class="sr"> for Student Performance Analyzer (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/Student-Performance-analyzer-project" target="_blank" rel="noopener">Code<span class="sr"> for Student Performance Analyzer (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn" style="--zc:var(--purple)" id="stn-logiclens" data-name="LogicLens AI" data-skills="python streamlit gemini llm git">
+          <div class="when mono"><b>Feb 2026</b>L03</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">AI for Bharat hackathon</span></div>
+            <h3>LogicLens AI</h3>
+            <p class="d">A study buddy for first-year students. It checks code for syntax errors, then explains the logic with Hinglish analogies and a flowchart. Supports five languages.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Planning for the API quota running out: I added an offline syntax guide as a fallback.</span></p>
+            <p class="stack mono">Gemini API / Google OAuth / Streamlit / Graphviz</p>
+            <div class="links"><a href="https://logic-lens.streamlit.app/" target="_blank" rel="noopener">Live<span class="sr"> for LogicLens AI (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/Logic-Lens" target="_blank" rel="noopener">Code<span class="sr"> for LogicLens AI (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="zone" style="--zc:var(--blue)" data-c="--blue" aria-label="Zone 2"><div class="zn" aria-hidden="true">2</div><span class="zmark" aria-hidden="true"></span><div class="zbody"><div class="zlabel mono"><span>Zone 2 · <span class="kn">ವಲಯ</span></span><span>Mar – Apr</span></div><h3>Solution challenges</h3><p>Two national challenges back to back. I learned to start from a real problem, not a cool API.</p></div></li>
+        <li class="stn" style="--zc:var(--blue)" id="stn-nutrisync" data-name="NutriSync" data-skills="python fastapi javascript charts docker pytest llm git">
+          <div class="when mono"><b>Apr 2026</b>L04</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">AMD Slingshot 2026</span><span>Solo</span></div>
+            <h3>NutriSync</h3>
+            <p class="d">A food decision engine, not a calorie counter. It asks why you&#x27;re eating, then suggests realistic swaps from 75 Indian foods, with habit streaks and a weekly report.</p>
+            <p class="learned"><span class="mono">Learned</span><span>People respond better to a good swap than to being told no.</span></p>
+            <p class="stack mono">FastAPI / JavaScript / Chart.js / Docker</p>
+            <div class="links"><a href="https://github.com/lochangowda10/Nutri-Sync" target="_blank" rel="noopener">Code<span class="sr"> for NutriSync (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn" style="--zc:var(--blue)" id="stn-aquastream" data-name="AquaStream AI" data-skills="react vite tailwind framer leaflet charts javascript gemini llm docker cloudrun git">
+          <div class="when mono"><b>Apr 2026</b>L05</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">Google Solution Challenge 2026</span><span>Solo</span></div>
+            <h3>AquaStream AI</h3>
+            <p class="d">A water command centre for Bengaluru. It forecasts shortages seven days ahead across six neighbourhoods, plans tanker routes and flags leaks, shown on a live map.</p>
+            <p class="learned"><span class="mono">Learned</span><span>A map and a chart make a prediction feel real to the person who has to act on it.</span></p>
+            <p class="stack mono">React / Vite / Tailwind / Leaflet / Recharts / Gemini / Cloud Run</p>
+            <div class="links"><a href="https://github.com/lochangowda10/AquaStream" target="_blank" rel="noopener">Code<span class="sr"> for AquaStream AI (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="zone" style="--zc:var(--pink)" data-c="--pink" aria-label="Zone 3"><div class="zn" aria-hidden="true">3</div><span class="zmark" aria-hidden="true"></span><div class="zbody"><div class="zlabel mono"><span>Zone 3 · <span class="kn">ವಲಯ</span></span><span>May 2026</span></div><h3>The May sprint</h3><p>Six builds in one month, including the Datathon win. I learned to scope hard and ship by the deadline.</p></div></li>
+        <li class="stn" style="--zc:var(--pink)" id="stn-phantom" data-name="Phantom Consensus" data-skills="python pandas git">
+          <div class="when mono"><b>May 2026</b>L06</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">ACMRIT hackathon</span><span>Team Code Hackers</span></div>
+            <h3>Phantom Consensus</h3>
+            <p class="d">Our answer to a hackathon problem about data you can&#x27;t trust. It cleans messy trust and betrayal records, detects alliances, and picks proposals that hold up against adversarial input.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Assume the input is lying, then design for it. It passed all 9 hidden test scenarios.</span></p>
+            <p class="stack mono">Python / pandas / Graph logic</p>
+            <div class="links"><a href="https://github.com/lochangowda10/ps5" target="_blank" rel="noopener">Code<span class="sr"> for Phantom Consensus (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn" style="--zc:var(--pink)" id="stn-pjblock" data-name="PJ Block Navigation" data-skills="react vite tailwind javascript vercel git">
+          <div class="when mono"><b>May 2026</b>L07</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">Design thinking project</span></div>
+            <h3>PJ Block Navigation</h3>
+            <p class="d">Freshers kept getting lost in BMSCE&#x27;s new PJ Block, so I built indoor wayfinding across its four floors, from labs to seminar halls.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Talk to the people who are lost before you draw the map.</span></p>
+            <p class="stack mono">React / Vite / Tailwind CSS v4</p>
+            <div class="links"><a href="https://idt-pj-block-navigation.vercel.app" target="_blank" rel="noopener">Live<span class="sr"> for PJ Block Navigation (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/IDT-PJ-BLOCK-NAVIGATION" target="_blank" rel="noopener">Code<span class="sr"> for PJ Block Navigation (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn ix" style="--zc:var(--pink)" id="stn-dataverse" data-name="DataVerse" data-skills="python sklearn xgboost pandas streamlit git">
+          <div class="when mono"><b>May 2026</b>L08</div><span class="node"></span>
+          <div class="body"><div class="pf-text">
+            <div class="code mono"><span class="tag win">Winner</span><span class="tag ">Datathon</span><span>Interchange · Team lead · Prime Team</span></div>
+            <h3>DataVerse</h3>
+            <p class="event">Bengaluru house prices</p>
+            <p class="d">An ML pipeline to price Bengaluru homes. A linear baseline explained about 61% of the variance. Location premiums were too non-linear for it, so we switched to a stacked ensemble and added a distance-to-metro feature.</p>
+            <div class="figure"><div><b>60.87%</b><span>baseline R²</span></div><div><b>3</b><span>models stacked</span></div><div><b>1,000</b><span>homes in the dataset</span></div></div>
+            <p class="learned"><span class="mono">Learned</span><span>When a straight line can&#x27;t fit the data, change the model, not the data.</span></p>
+            <p class="stack mono">scikit-learn / XGBoost / pandas / Streamlit / Plotly</p>
+            <div class="links"><a href="https://dataverse-prime-real-estate.streamlit.app/" target="_blank" rel="noopener">Live<span class="sr"> for DataVerse (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/DataVerse" target="_blank" rel="noopener">Code<span class="sr"> for DataVerse (opens in a new tab)</span> ↗</a></div>
+          </div><div class="pf-fig"><svg class="dg" viewBox="0 0 360 190" role="img" aria-label="Stacking ensemble: XGBoost, HistGradientBoosting and Random Forest feed a Ridge meta-model that predicts the price.">
+<rect class="box" x="4" y="12" width="118" height="34"/><text x="63" y="33" text-anchor="middle">XGBoost</text>
+<rect class="box" x="4" y="78" width="118" height="34"/><text x="63" y="99" text-anchor="middle">HistGradBoost</text>
+<rect class="box" x="4" y="144" width="118" height="34"/><text x="63" y="165" text-anchor="middle">Random Forest</text>
+<path class="wire" pathLength="1" d="M122 29 H156 V95 H190"/><path class="wire" pathLength="1" d="M122 95 H190"/><path class="wire" pathLength="1" d="M122 161 H156 V95"/>
+<rect class="box hot" x="190" y="78" width="86" height="34"/><text class="on" x="233" y="99" text-anchor="middle">Ridge</text>
+<text x="233" y="130" text-anchor="middle">meta-model</text>
+<path class="wire" pathLength="1" d="M276 95 H326"/><polygon class="tip" points="326,89 338,95 326,101"/>
+<text x="333" y="76" text-anchor="end">PRICE</text>
+</svg>
+<p class="cap mono">How our winning model was stacked</p></div></div>
+        </li>
+        <li class="stn" style="--zc:var(--pink)" id="stn-flowcode" data-name="FlowCode AI" data-skills="react vite javascript llm gemini openai vercel git">
+          <div class="when mono"><b>May 2026</b>L09</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">Hackathon</span><span>Solo</span></div>
+            <h3>FlowCode AI</h3>
+            <p class="d">Describe logic in plain language and get code back in Python, JavaScript, C++ or Java. It includes a library of 15+ algorithms to compare and quizzes to practise with.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Putting Gemini, OpenAI and Anthropic behind one interface, with the user&#x27;s own key.</span></p>
+            <p class="stack mono">React / Vite / LLM APIs</p>
+            <div class="links"><a href="https://flow-code-ai-coral.vercel.app/" target="_blank" rel="noopener">Live<span class="sr"> for FlowCode AI (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/Flow-Code-AI" target="_blank" rel="noopener">Code<span class="sr"> for FlowCode AI (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn" style="--zc:var(--pink)" id="stn-aegis" data-name="AegisRoute" data-skills="python fastapi streamlit docker pytest rest git">
+          <div class="when mono"><b>May 2026</b>L10</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">Hackathon</span><span>Solo</span></div>
+            <h3>AegisRoute</h3>
+            <p class="d">A self-healing gateway for multi-agent AI systems. It has six routing strategies and health checks every 3 seconds. Failing nodes are quarantined and re-admitted when they recover, and a chaos mode lets you watch it happen.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Failure is a state to design for, not an exception to hope away.</span></p>
+            <p class="stack mono">FastAPI / httpx / Streamlit / Plotly / Docker</p>
+            <div class="links"><a href="https://aegisroute.streamlit.app/" target="_blank" rel="noopener">Live<span class="sr"> for AegisRoute (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/AegisRoute" target="_blank" rel="noopener">Code<span class="sr"> for AegisRoute (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn" style="--zc:var(--pink)" id="stn-phish" data-name="Phish Shield AI" data-skills="python fastapi tailwind charts docker git">
+          <div class="when mono"><b>May 2026</b>L11</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">Cybersecurity hackathon</span><span>Solo</span></div>
+            <h3>Phish Shield AI</h3>
+            <p class="d">A phishing-awareness simulator that never sends a real email. Choose a department and a lure, then watch 100 simulated employees react. Anyone who falls for it gets training matched to that lure.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Most security failures are human, so the training has to be too.</span></p>
+            <p class="stack mono">FastAPI / Jinja / Tailwind / Chart.js</p>
+            <div class="links"><a href="https://github.com/lochangowda10/Phish-Shield-AI" target="_blank" rel="noopener">Code<span class="sr"> for Phish Shield AI (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="zone" style="--zc:var(--green)" data-c="--green" aria-label="Zone 4"><div class="zn" aria-hidden="true">4</div><span class="zmark" aria-hidden="true"></span><div class="zbody"><div class="zlabel mono"><span>Zone 4 · <span class="kn">ವಲಯ</span></span><span>Jul – Sep</span></div><h3>Agents &amp; money</h3><p>Multi-agent systems, finance and the city. I learned never to trust an AI with a number I can&#x27;t check.</p></div></li>
+        <li class="stn ix" style="--zc:var(--green)" id="stn-navia" data-name="NAVIA" data-skills="typescript nextjs react tailwind framer agents llm openai langchain postgres python fastapi docker git">
+          <div class="when mono"><b>Jul 2026</b>L12</div><span class="node"></span>
+          <div class="body"><div class="pf-text">
+            <div class="code mono"><span class="tag ">AMD Developer Hackathon</span><span>Interchange · Team of 3</span></div>
+            <h3>NAVIA</h3>
+            <p class="event">AI swing-trading copilot · My part: 3D interface design and frontend</p>
+            <p class="d">Specialist agents (technical, fundamental and risk) analyse a stock separately. A trade signal is only issued when they agree. I designed and built the interface, made 40 of the team&#x27;s 48 commits, and explored running inference locally on AMD Ryzen AI hardware.</p>
+            <div class="figure"><div><b>16</b><span>agent modules in the backend</span></div><div><b>40 / 48</b><span>commits were mine</span></div></div>
+            <p class="learned"><span class="mono">Learned</span><span>One model&#x27;s opinion isn&#x27;t enough. Make the agents check each other.</span></p>
+            <p class="stack mono">Next.js / React / Framer Motion / FastAPI / LangChain / Supabase</p>
+            <div class="links"><a href="https://navia-ai.vercel.app" target="_blank" rel="noopener">Live<span class="sr"> for NAVIA (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/AMD-Hackathon" target="_blank" rel="noopener">Code<span class="sr"> for NAVIA (opens in a new tab)</span> ↗</a></div>
+          </div><div class="pf-fig"><svg class="dg" viewBox="0 0 320 206" role="img" aria-label="Three agents, technical, fundamental and risk, feed one signal that is issued only when all three agree.">
+<line class="wire" pathLength="1" x1="60" y1="40" x2="160" y2="104"/><line class="wire" pathLength="1" x1="260" y1="40" x2="160" y2="104"/><line class="wire" pathLength="1" x1="160" y1="170" x2="160" y2="104"/>
+<circle class="lamp l1" cx="60" cy="40" r="15"/><text x="60" y="74" text-anchor="middle">TECHNICAL</text>
+<circle class="lamp l2" cx="260" cy="40" r="15"/><text x="260" y="74" text-anchor="middle">FUNDAMENTAL</text>
+<circle class="lamp l3" cx="160" cy="170" r="15"/><text x="160" y="202" text-anchor="middle">RISK</text>
+<circle class="lamp big l4" cx="160" cy="104" r="26"/><text class="on" x="160" y="108" text-anchor="middle">SIGNAL</text>
+</svg>
+<p class="cap mono">A signal is issued only when all three agree</p></div></div>
+        </li>
+        <li class="stn" style="--zc:var(--green)" id="stn-bento" data-name="BentoPulse" data-skills="typescript nextjs react tailwind framer agents vercel rest git">
+          <div class="when mono"><b>Jul 2026</b>L13</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">Bento hackathon</span><span>Solo</span></div>
+            <h3>BentoPulse</h3>
+            <p class="d">A Bloomberg-style terminal for Bento prediction markets. An AI research agent reads news and sentiment and scores each market from 0 to 100, citing its sources. You can then place a bet on-chain through the Bento SDK.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Owning every layer by myself, from the UI to signing a transaction.</span></p>
+            <p class="stack mono">Next.js / Tailwind / Framer Motion / Bento SDK / viem</p>
+            <div class="links"><a href="https://bentopulse.vercel.app/" target="_blank" rel="noopener">Live<span class="sr"> for BentoPulse (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/bento-hackathon" target="_blank" rel="noopener">Code<span class="sr"> for BentoPulse (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn ix" style="--zc:var(--green)" id="stn-nostro" data-name="nostro" data-skills="python llm gemini pytest ci docker git">
+          <div class="when mono"><b>Aug 2026</b>L14</div><span class="node"></span>
+          <div class="body"><div class="pf-text">
+            <div class="code mono"><span class="tag ">Razorpay /buildathon</span><span>Interchange · Solo · Track 04</span></div>
+            <h3>nostro</h3>
+            <p class="event">AI finance controller</p>
+            <p class="d">It reconciles a merchant&#x27;s books, the payment processor&#x27;s settlement and the bank statement. Plain rules close everything they can prove. The language model only explains what&#x27;s left over, and code re-checks every amount before a batch closes. The checker rejected 87 confident but wrong explanations from the model.</p>
+            <p class="quote">“LLM proposes. Code disposes.”</p>
+            <div class="figure"><div><b>100%</b><span>precision, 0 false matches</span></div><div><b>52</b><span>tests, CI on 3 Pythons</span></div></div>
+            <p class="learned"><span class="mono">Learned</span><span>Never let the LLM own a number.</span></p>
+            <p class="stack mono">Python / Gemini / pytest / GitHub Actions / Docker</p>
+            <div class="links"><a href="https://github.com/lochangowda10/nostro" target="_blank" rel="noopener">Code<span class="sr"> for nostro (opens in a new tab)</span> ↗</a></div>
+          </div><div class="pf-fig"><svg class="dg" viewBox="0 0 340 128" role="img" aria-label="Batches closed: 60.66 percent with rules only, 72.97 percent with rules plus a real LLM. Precision stayed 100 percent.">
+<text x="0" y="35">Rules only</text><rect class="bar grow" x="112" y="20" width="133.5" height="22"/><text x="251.5" y="35">60.66%</text>
+<text x="0" y="75">Rules + LLM</text><rect class="bar alt grow" x="112" y="60" width="160.5" height="22"/><text x="278.5" y="75">72.97%</text>
+<line class="axis" x1="112" y1="96" x2="332" y2="96"/>
+<line class="axis" x1="112" y1="92" x2="112" y2="100"/><line class="axis" x1="222" y1="92" x2="222" y2="100"/><line class="axis" x1="332" y1="92" x2="332" y2="100"/>
+<text x="112" y="116" text-anchor="middle">0</text><text x="222" y="116" text-anchor="middle">50%</text><text x="332" y="116" text-anchor="end">100%</text>
+</svg>
+<p class="cap mono">Batches closed, same 5 seeded datasets</p></div></div>
+        </li>
+        <li class="stn" style="--zc:var(--green)" id="stn-swinglens" data-name="SwingLens" data-skills="javascript react vite tailwind charts python fastapi docker git">
+          <div class="when mono"><b>Aug 2026</b>L15</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">THE HIVE hackathon</span><span>Team of 2</span></div>
+            <h3>SwingLens</h3>
+            <p class="event">My part: frontend and product UX</p>
+            <p class="d">Explainable swing-trading setups. It draws support, resistance and breakouts on the chart, then plans an entry, stop and target. Every number comes from math, and the AI only narrates. Each setup is graded later against what the price actually did.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Grade yourself against reality, and show the score.</span></p>
+            <p class="stack mono">React / Vite / lightweight-charts / FastAPI / yfinance</p>
+            <div class="links"><a href="https://github.com/lochangowda10/hive-hackathon" target="_blank" rel="noopener">Code<span class="sr"> for SwingLens (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+        <li class="stn ix" style="--zc:var(--green)" id="stn-launchloop" data-name="LaunchLoop AI" data-skills="typescript nextjs react tailwind postgres openai llm githubapi vercel rest git">
+          <div class="when mono"><b>Aug 2026</b>L16</div><span class="node"></span>
+          <div class="body"><div class="pf-text">
+            <div class="code mono"><span class="tag ">THE HIVE × ApplyBee</span><span>Interchange · Solo</span></div>
+            <h3>LaunchLoop AI</h3>
+            <p class="event">Positioning, tested on real visitors</p>
+            <p class="d">Give it a repo, a URL or one sentence. It writes two opposing pitches, deploys both as live landing pages and splits real traffic between them. Then it proposes a rewrite based on what visitors misunderstood, and a person approves it before it ships.</p>
+            <div class="figure"><div><b>6 / 6</b><span>end-to-end tests passing</span></div><div><b>5</b><span>model calls per experiment</span></div></div>
+            <p class="learned"><span class="mono">Learned</span><span>Rate limits and database migrations (SQLite to Neon Postgres) are product problems, not afterthoughts.</span></p>
+            <p class="stack mono">Next.js / Neon Postgres / OpenAI SDK / GitHub API / Vercel</p>
+            <div class="links"><a href="https://applybee.vercel.app" target="_blank" rel="noopener">Live<span class="sr"> for LaunchLoop AI (opens in a new tab)</span> ↗</a><a href="https://applybee.vercel.app/demo" target="_blank" rel="noopener">See a completed run<span class="sr"> for LaunchLoop AI (opens in a new tab)</span> ↗</a><a href="https://github.com/lochangowda10/applybee" target="_blank" rel="noopener">Code<span class="sr"> for LaunchLoop AI (opens in a new tab)</span> ↗</a></div>
+          </div><div class="pf-fig"><svg class="dg" viewBox="0 0 340 128" role="img" aria-label="Demo run: variant A got 4 clicks from 11 views, 36.4 percent. Variant B got 2 from 10, 20.0 percent.">
+<text x="0" y="35">Variant A</text><rect class="bar alt grow" x="112" y="20" width="160.2" height="22"/><text x="278.2" y="35">36.4%</text>
+<text x="0" y="75">Variant B</text><rect class="bar grow" x="112" y="60" width="88" height="22"/><text x="206" y="75">20.0%</text>
+<line class="axis" x1="112" y1="96" x2="332" y2="96"/>
+<line class="axis" x1="112" y1="92" x2="112" y2="100"/><line class="axis" x1="222" y1="92" x2="222" y2="100"/><line class="axis" x1="332" y1="92" x2="332" y2="100"/>
+<text x="112" y="116" text-anchor="middle">0</text><text x="222" y="116" text-anchor="middle">25%</text><text x="332" y="116" text-anchor="end">50%</text>
+</svg>
+<p class="cap mono">Click-through, real visitors, demo run</p></div></div>
+        </li>
+        <li class="stn last" style="--zc:var(--green)" id="stn-namma" data-name="NammaSignal" data-skills="python fastapi strands agents sqlite docker pytest git">
+          <div class="when mono"><b>Sep 2026</b>L17</div><span class="node"></span>
+          <div class="body">
+            <div class="code mono"><span class="tag ">WeMakeDevs · Bharat Builds</span><span>Solo · Latest</span></div>
+            <h3>NammaSignal</h3>
+            <p class="d">When a cloudburst hits, Silk Board can flood in 15 minutes. NammaSignal combines rain sensors, traffic-police advisories, civic complaints and citizen reports into one feed. For each road it says how likely a hazard is right now, how confident it is, and why.</p>
+            <p class="learned"><span class="mono">Learned</span><span>Weigh every source by how much it can be trusted, and say how sure you are.</span></p>
+            <p class="stack mono">FastAPI / AWS Strands Agents / Cedar / SQLite / Docker</p>
+            <div class="links"><a href="https://github.com/lochangowda10/NammaSignal" target="_blank" rel="noopener">Code<span class="sr"> for NammaSignal (opens in a new tab)</span> ↗</a></div>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="route branch-wrap">
+      <div class="branch">
+        <h3>Branch line</h3>
+        <p>Smaller stops: coursework, team prototypes and things I built to learn a tool.</p>
+        <ul>
+          <li id="br-smartmove" data-name="SmartMove Tier-2" data-skills="typescript react leaflet charts git"><a href="https://smart-mobility-hub.vercel.app" target="_blank" rel="noopener">SmartMove Tier-2<span class="sr"> (opens in a new tab)</span> ↗</a><span>Team ideathon prototype</span></li>
+          <li id="br-beyond" data-name="Beyond Academics site" data-skills="html vercel git"><a href="https://beyond-academics-registration.vercel.app" target="_blank" rel="noopener">Beyond Academics site<span class="sr"> (opens in a new tab)</span> ↗</a><span>Community I tech-lead</span></li>
+          <li id="br-parking" data-name="Smart Parking System" data-skills="c git"><a href="https://github.com/lochangowda10/C-AAT" target="_blank" rel="noopener">Smart Parking System<span class="sr"> (opens in a new tab)</span> ↗</a><span>C, college assessment</span></li>
+          <li id="br-zomato" data-name="Zomato clone" data-skills="typescript angular git"><a href="https://github.com/lochangowda10/zomato-food" target="_blank" rel="noopener">Zomato clone<span class="sr"> (opens in a new tab)</span> ↗</a><span>Learning Angular</span></li>
+          <li id="br-pylibs" data-name="Python libraries talk" data-skills="python pandas git"><a href="https://github.com/lochangowda10/python_libraries_presentation" target="_blank" rel="noopener">Python libraries talk<span class="sr"> (opens in a new tab)</span> ↗</a><span>Self-study</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CITY NOTE ================= -->
+<section class="city" id="blr" aria-label="About Bengaluru">
+  <div class="door l" aria-hidden="true"></div><div class="door r" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="big">BLR</div>
+    <div>
+      <p>Most of what I build is about Bengaluru: its water, its flooded underpasses, its house prices, even the building my classes are in. Public data is my favourite raw material, and I'd like to build a startup on it someday.</p>
+      <ul>
+        <li><a href="#stn-namma"><i class="dot" style="background:var(--yellow)"></i>Silk Board floods · NammaSignal</a></li>
+        <li><a href="#stn-aquastream"><i class="dot" style="background:var(--yellow)"></i>Six neighbourhoods · AquaStream</a></li>
+        <li><a href="#stn-dataverse"><i class="dot" style="background:var(--yellow)"></i>House prices · DataVerse</a></li>
+        <li><a href="#stn-pjblock"><i class="dot" style="background:var(--yellow)"></i>PJ Block · Navigation</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SYSTEM MAP ================= -->
+<section id="map">
+  <div class="wrap">
+    <div class="sign"><span class="roundel" style="background:var(--green)">S</span><h2>System Map</h2><span class="kn">ನಕ್ಷೆ</span></div>
+    <p class="intro">Every tool I've used, as a metro line. The numbers count the projects on the line that use it. Pick any stop to see where it shows up.</p>
+    <div class="map">
+      <div class="mline" style="--c:var(--purple)"><h3><i class="dot" style="background:var(--purple)"></i>Languages</h3>
+        <ul class="stops"><li><button class="stop" type="button" data-skill="python" data-line-name="Languages" aria-pressed="false">Python<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="typescript" data-line-name="Languages" aria-pressed="false">TypeScript<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="javascript" data-line-name="Languages" aria-pressed="false">JavaScript<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="c" data-line-name="Languages" aria-pressed="false">C<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="java" data-line-name="Languages" data-note="On my resume from coursework. No Java project on the line yet." aria-pressed="false">Java<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="html" data-line-name="Languages" aria-pressed="false">HTML &amp; CSS<span class="n"></span></button></li></ul></div>
+      <div class="mline" style="--c:var(--green)"><h3><i class="dot" style="background:var(--green)"></i>Frontend</h3>
+        <ul class="stops"><li><button class="stop" type="button" data-skill="react" data-line-name="Frontend" aria-pressed="false">React<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="nextjs" data-line-name="Frontend" aria-pressed="false">Next.js<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="tailwind" data-line-name="Frontend" aria-pressed="false">Tailwind CSS<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="vite" data-line-name="Frontend" aria-pressed="false">Vite<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="framer" data-line-name="Frontend" aria-pressed="false">Framer Motion<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="charts" data-line-name="Frontend" aria-pressed="false">Recharts &amp; Chart.js<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="leaflet" data-line-name="Frontend" aria-pressed="false">Leaflet maps<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="angular" data-line-name="Frontend" aria-pressed="false">Angular<span class="n"></span></button></li></ul></div>
+      <div class="mline" style="--c:var(--blue)"><h3><i class="dot" style="background:var(--blue)"></i>Backend &amp; APIs</h3>
+        <ul class="stops"><li><button class="stop" type="button" data-skill="fastapi" data-line-name="Backend &amp; APIs" aria-pressed="false">FastAPI<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="streamlit" data-line-name="Backend &amp; APIs" aria-pressed="false">Streamlit<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="rest" data-line-name="Backend &amp; APIs" aria-pressed="false">REST APIs<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="githubapi" data-line-name="Backend &amp; APIs" aria-pressed="false">GitHub API<span class="n"></span></button></li></ul></div>
+      <div class="mline" style="--c:var(--yellow)"><h3><i class="dot" style="background:var(--yellow)"></i>AI &amp; ML</h3>
+        <ul class="stops"><li><button class="stop" type="button" data-skill="llm" data-line-name="AI &amp; ML" aria-pressed="false">LLM APIs<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="gemini" data-line-name="AI &amp; ML" aria-pressed="false">Gemini<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="openai" data-line-name="AI &amp; ML" aria-pressed="false">OpenAI SDK<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="agents" data-line-name="AI &amp; ML" aria-pressed="false">Multi-agent systems<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="langchain" data-line-name="AI &amp; ML" aria-pressed="false">LangChain &amp; MCP<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="strands" data-line-name="AI &amp; ML" aria-pressed="false">AWS Strands Agents<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="bedrock" data-line-name="AI &amp; ML" data-note="Explored for LLM apps. No project on the line uses it yet." aria-pressed="false">Amazon Bedrock<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="ollama" data-line-name="AI &amp; ML" data-note="Used for running and serving models fast while experimenting." aria-pressed="false">Ollama &amp; Groq<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="sklearn" data-line-name="AI &amp; ML" aria-pressed="false">scikit-learn<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="xgboost" data-line-name="AI &amp; ML" aria-pressed="false">XGBoost<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="pandas" data-line-name="AI &amp; ML" aria-pressed="false">pandas &amp; NumPy<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="yolo" data-line-name="AI &amp; ML" aria-pressed="false">YOLOv8<span class="n"></span></button></li></ul></div>
+      <div class="mline" style="--c:var(--pink)"><h3><i class="dot" style="background:var(--pink)"></i>Cloud &amp; Data</h3>
+        <ul class="stops"><li><button class="stop" type="button" data-skill="vercel" data-line-name="Cloud &amp; Data" aria-pressed="false">Vercel<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="cloudrun" data-line-name="Cloud &amp; Data" aria-pressed="false">Google Cloud Run<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="render" data-line-name="Cloud &amp; Data" data-note="Used to host backends, including NAVIA&#x27;s API and AegisRoute." aria-pressed="false">Render<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="docker" data-line-name="Cloud &amp; Data" aria-pressed="false">Docker<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="postgres" data-line-name="Cloud &amp; Data" aria-pressed="false">PostgreSQL (Neon, Supabase)<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="sqlite" data-line-name="Cloud &amp; Data" aria-pressed="false">SQLite<span class="n"></span></button></li></ul></div>
+      <div class="mline" style="--c:var(--ink)"><h3><i class="dot" style="background:var(--ink)"></i>How I work</h3>
+        <ul class="stops"><li><button class="stop" type="button" data-skill="git" data-line-name="How I work" aria-pressed="false">Git &amp; GitHub<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="claude" data-line-name="How I work" data-note="My main build partner. I use AI coding tools to write, debug and ship nearly every project here. My job is deciding what to build, steering, testing and understanding it." aria-pressed="false">Claude Code<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="pytest" data-line-name="How I work" aria-pressed="false">pytest<span class="n"></span></button></li><li><button class="stop" type="button" data-skill="ci" data-line-name="How I work" aria-pressed="false">GitHub Actions CI<span class="n"></span></button></li></ul></div>
+    </div>
+    <div class="map-foot">
+      <p class="legend mono"><i></i>Interchange: used in 4 or more projects</p>
+      <div class="panel" id="panel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RECORD ================= -->
+<section id="record" style="padding-top:0">
+  <div class="wrap">
+    <div class="sign"><span class="roundel" style="background:var(--pink)">R</span><h2>Record</h2><span class="kn">ದಾಖಲೆ</span></div>
+    <div class="tickets">
+      <article class="ticket gold wide">
+        <div class="stub"><span class="mono">Single · First class</span></div>
+        <div class="tb">
+          <div class="tclass mono"><span>Datathon · BMS College of Engineering</span><span>Team lead</span></div>
+          <h3>Datathon Winner</h3>
+          <p>I led our team to the winning result with a stacked ensemble that priced Bengaluru homes. It's my one win so far, and the build where I learned the most about data. <a href="#stn-dataverse">Ride to DataVerse</a>.</p>
+          <div class="stamp" aria-hidden="true">Validated<small>BMSCE · 2026</small></div>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="stub"><span class="mono">Season pass</span></div>
+        <div class="tb">
+          <div class="tclass mono"><span>Community</span><span>BMSCE</span></div>
+          <h3>Tech Lead, Beyond Academics</h3>
+          <p>I'm on the four-person core team of a peer-to-peer coding community for first-years. I built its site and lead the tech side.</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="stub"><span class="mono">Day pass</span></div>
+        <div class="tb">
+          <div class="tclass mono"><span>Ideathon</span><span>REVA University</span></div>
+          <h3>AMD Ryzen AI Slingshot</h3>
+          <p>I worked with my team on AI-focused ideation and problem-solving, and led teams across other hackathons from idea to submission.</p>
+        </div>
+      </article>
+      <article class="ticket">
+        <div class="stub"><span class="mono">Return · 2025–29</span></div>
+        <div class="tb">
+          <div class="tclass mono"><span>Education</span><span>CGPA 9.55 / 10</span></div>
+          <h3>BMS College of Engineering</h3>
+          <p>B.Tech in Artificial Intelligence and Data Science, Bengaluru. Expected 2029.</p>
+        </div>
+      </article>
+    </div>
+    <p class="tally">12+ hackathons, ideathons and buildathons in my first year. One win, and something learned from every one.</p>
+  </div>
+</section>
+
+<!-- ================= TERMINAL ================= -->
+<section class="terminal" id="terminal">
+  <div class="wrap">
+    <div class="sign"><span class="roundel" style="background:var(--yellow);color:#17151C">T</span><span class="kn">ಕೊನೆಯ ನಿಲ್ದಾಣ · Terminal</span></div>
+    <h2 class="huge">This is your stop. <em>Let's build something.</em></h2>
+    <p class="sub">I'm looking for AI/ML and software engineering internships, and I'm always up for a hackathon team. Write to me and I'll reply.</p>
+    <div class="mail">
+      <a href="mailto:10lochangowda@gmail.com" id="email">10lochangowda@gmail.com</a>
+      <button class="copy" id="copy" type="button">Copy email</button>
+    </div>
+    <div class="socials">
+      <a href="https://linkedin.com/in/lochangowda10" target="_blank" rel="noopener"><b>LinkedIn ↗</b><span>in/lochangowda10</span></a>
+      <a href="https://github.com/lochangowda10" target="_blank" rel="noopener"><b>GitHub ↗</b><span>@lochangowda10</span></a>
+      <a href="https://x.com/_lochangowda" target="_blank" rel="noopener"><b>X ↗</b><span>@_lochangowda</span></a>
+      <a href="https://instagram.com/_lochangowda" target="_blank" rel="noopener"><b>Instagram ↗</b><span>@_lochangowda</span></a>
+      <a href="Lochan_Resume.pdf" target="_blank" rel="noopener"><b>Résumé ↗</b><span>One page, PDF</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap mono">
+    <span>Doors will open on the left. Please mind the gap.</span>
+    <span>Built in Bengaluru · © 2026 Lochan Gowda T M</span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = id => document.getElementById(id);
+
+  /* ---------- departure board ---------- */
+  const narrow = innerWidth < 440;
+  const W = narrow ? [1, 13, 8] : [2, 17, 9];
+  const CH = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/.-:';
+  const rows = [
+    { pool: [['1','FIRST YEAR','LEARNING'], ['1','NAMMASIGNAL','ARRIVED'], ['1','NOSTRO','ARRIVED']] },
+    { pool: [['2','AI/ML INTERNSHIP','BOARDING'], ['2','SWE INTERNSHIP','BOARDING']], go: true },
+    { pool: [['3','NEXT HACKATHON','ON TIME'], ['3','FILTER COFFEE','REFILL'], ['3','MASALA DOSA','DELAYED']] }
+  ];
+  const board = $('board');
+  const heads = document.createElement('div');
+  heads.className = 'board-cols mono';
+  heads.innerHTML = ['Plt', 'Destination', 'Status'].map((t, i) =>
+    `<span style="width:calc(${W[i]} * (1.05 * var(--cs) + 2px))">${t}</span>`).join('');
+  board.appendChild(heads);
+  rows.forEach(r => {
+    r.i = 0;
+    r.el = document.createElement('div');
+    r.el.className = 'brow' + (r.go ? ' go' : '');
+    r.cells = W.map((w, ci) => {
+      const g = document.createElement('div');
+      g.className = 'cells' + (ci === 2 ? ' status' : '');
+      const cs = Array.from({ length: w }, () => {
+        const c = document.createElement('span'); c.className = 'cell'; g.appendChild(c); return c;
+      });
+      r.el.appendChild(g);
+      return cs;
+    });
+    board.appendChild(r.el);
+    setRow(r, r.pool[0], false);
+  });
+  function setRow(r, vals, animate) {
+    vals.forEach((v, ci) => {
+      const text = v.padEnd(W[ci]).slice(0, W[ci]);
+      r.cells[ci].forEach((cell, k) => {
+        const target = text[k];
+        if (!animate || reduce) { cell.textContent = target; return; }
+        if (cell.textContent === target) return;
+        let n = 3 + Math.floor(Math.random() * 6) + k % 4;
+        const tick = () => {
+          cell.classList.remove('flip'); void cell.offsetWidth; cell.classList.add('flip');
+          cell.textContent = --n <= 0 ? target : CH[Math.floor(Math.random() * CH.length)];
+          if (n > 0) setTimeout(tick, 60);
+        };
+        setTimeout(tick, k * 18);
+      });
+    });
+  }
+  let boardVisible = true;
+  new IntersectionObserver(es => { boardVisible = es[0].isIntersecting; }).observe(board);
+  if (!reduce) {
+    setTimeout(() => rows.forEach(r => { r.cells.flat().forEach(c => c.textContent = ' '); setRow(r, r.pool[0], true); }), 500);
+    let turn = 0;
+    setInterval(() => {
+      if (!boardVisible || document.hidden) return;
+      const r = rows[turn++ % rows.length];
+      r.i = (r.i + 1) % r.pool.length;
+      setRow(r, r.pool[r.i], true);
+    }, 3200);
+  }
+  const fmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata' });
+  const tickClock = () => $('clock').textContent = 'BLR ' + fmt.format(new Date()) + ' IST';
+  tickClock(); setInterval(tickClock, 15000);
+
+  /* ---------- smart card tilt ---------- */
+  const pass = $('pass');
+  if (!reduce && matchMedia('(hover: hover)').matches) {
+    const stage = pass.parentElement;
+    stage.addEventListener('pointermove', e => {
+      const b = pass.getBoundingClientRect();
+      const x = (e.clientX - b.left) / b.width, y = (e.clientY - b.top) / b.height;
+      pass.classList.add('live');
+      pass.style.setProperty('--ry', ((x - .5) * 26).toFixed(2) + 'deg');
+      pass.style.setProperty('--rx', ((.5 - y) * 20).toFixed(2) + 'deg');
+      pass.style.setProperty('--gx', (x * 100).toFixed(1) + '%');
+      pass.style.setProperty('--gy', (y * 100).toFixed(1) + '%');
+    });
+    stage.addEventListener('pointerleave', () => {
+      pass.classList.remove('live');
+      ['--rx', '--ry', '--gx', '--gy'].forEach(p => pass.style.removeProperty(p));
+    });
+  }
+
+  /* ---------- sound: an opt-in two-tone chime ---------- */
+  const soundBtn = $('sound');
+  let soundOn = false, actx = null, lastChime = 0;
+  try { soundOn = localStorage.getItem('lochan-sound') === 'on'; } catch (e) {}
+  const paintSound = () => { soundBtn.setAttribute('aria-pressed', soundOn); soundBtn.textContent = 'Sound: ' + (soundOn ? 'on' : 'off'); };
+  paintSound();
+  function chime() {
+    if (!soundOn || Date.now() - lastChime < 2000) return;
+    lastChime = Date.now();
+    try {
+      actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+      const t = actx.currentTime;
+      [659.25, 880].forEach((f, i) => {
+        const o = actx.createOscillator(), g = actx.createGain();
+        o.type = 'sine'; o.frequency.value = f;
+        g.gain.setValueAtTime(0, t + i * .16);
+        g.gain.linearRampToValueAtTime(.18, t + i * .16 + .02);
+        g.gain.exponentialRampToValueAtTime(.001, t + i * .16 + .5);
+        o.connect(g).connect(actx.destination); o.start(t + i * .16); o.stop(t + i * .16 + .55);
+      });
+    } catch (e) {}
+  }
+  soundBtn.addEventListener('click', () => {
+    soundOn = !soundOn; paintSound();
+    try { localStorage.setItem('lochan-sound', soundOn ? 'on' : 'off'); } catch (e) {}
+    if (soundOn) { lastChime = 0; chime(); }
+    track('sound', { on: soundOn });
+  });
+
+  /* ---------- the line: fill, train, arrival, LED strip ---------- */
+  const bar = $('bar'), route = $('route'), fill = $('fill'), train = $('train');
+  const stns = [...route.querySelectorAll('.stn')];
+  const dots = [...$('ledots').children];
+  const ledText = $('ledText'), ledName = $('ledName'), ledKn = $('ledKn'), ledEn = $('ledEn');
+  const sections = [['line','The Line'],['blr','Bengaluru'],['map','System Map'],['record','Record'],['terminal','Terminal']].map(([id, n]) => [$(id), n]);
+  let nodeY = [], H = 1, hereIdx = -1, queued = false;
+  const zones = [...route.querySelectorAll('.zone')];
+  function measure() {
+    const top = route.getBoundingClientRect().top;
+    H = route.offsetHeight - 8;
+    nodeY = stns.map(s => { const n = s.querySelector('.node').getBoundingClientRect(); return n.top - top + n.height / 2; });
+    // paint the line in each zone's colour, blending across zone boundaries
+    const cs = getComputedStyle(document.documentElement);
+    const stops = zones.map(z => [z.getBoundingClientRect().top - top - 8, cs.getPropertyValue(z.dataset.c).trim()]);
+    fill.style.background = 'linear-gradient(to bottom,' + stops.map(([y, c], i) =>
+      i === 0 ? `${c} 0px` : `${stops[i - 1][1]} ${Math.max(0, y - 60)}px, ${c} ${y + 20}px`).join(',') + ')';
+    ride();
+  }
+  function ride() {
+    queued = false;
+    // reads
+    const rb = route.getBoundingClientRect();
+    const vh = innerHeight;
+    const secTops = sections.map(([el]) => el.getBoundingClientRect().top);
+    // compute
+    const head = vh * 0.55 - rb.top;
+    const h = Math.max(0, Math.min(H + 8, head));
+    let near = -1, best = 1e9;
+    nodeY.forEach((y, i) => { const d = Math.abs(y - h); if (d < best) { best = d; near = i; } });
+    let ty = h;
+    if (near > -1 && best < 44) ty = nodeY[near] + (h - nodeY[near]) * 0.25;  // dwell at the platform
+    const here = near > -1 && best < 110 ? near : -1;
+    // writes
+    fill.style.clipPath = `inset(0 0 ${(100 - 100 * Math.max(0, Math.min(1, (h - 8) / H))).toFixed(2)}% 0 round 5px)`;
+    train.style.transform = `translateY(${ty - 20}px)`;
+    stns.forEach((s, i) => {
+      const passed = nodeY[i] <= h + 4;
+      s.classList.toggle('passed', passed);
+      s.classList.toggle('here', i === here);
+      dots[i].className = (dots[i].dataset.gap ? 'gap ' : '') + (i === here ? 'h' : passed ? 'p' : '');
+    });
+    if (here !== hereIdx) {
+      hereIdx = here;
+      if (here > -1 && (stns[here].classList.contains('ix') || stns[here].classList.contains('last'))) chime();
+    }
+    const riding = rb.top < vh * 0.45 && rb.bottom > vh * 0.45;
+    bar.classList.toggle('riding', riding);
+    if (riding) {
+      const at = here > -1 && best < 60;
+      const idx = at ? here : nodeY.findIndex(y => y > h);
+      const s = stns[idx < 0 ? stns.length - 1 : idx];
+      ledKn.textContent = at ? 'ಈ ನಿಲ್ದಾಣ' : 'ಮುಂದಿನ ನಿಲ್ದಾಣ';
+      ledEn.textContent = at ? 'This station' : 'Next station';
+      ledName.textContent = s.dataset.name;
+      ledText.classList.toggle('ix', at && s.classList.contains('ix'));
+    }
+    let cur = -1;
+    secTops.forEach((t, i) => { if (t <= vh * 0.5) cur = i; });
+    const nx = sections[cur + 1];
+    const label = nx ? nx[1] : 'End of the line';
+    if ($('nextName').textContent !== label) $('nextName').textContent = label;
+  }
+  const queue = () => { if (!queued) { queued = true; requestAnimationFrame(ride); } };
+  addEventListener('scroll', queue, { passive: true });
+  new ResizeObserver(measure).observe(route);
+  if (document.fonts) document.fonts.ready.then(measure);
+  measure();
+
+  /* ---------- system map, wired to the line ---------- */
+  const users = {};
+  document.querySelectorAll('[data-skills]').forEach(el => {
+    el.dataset.skills.split(' ').forEach(k => (users[k] = users[k] || []).push(el));
+  });
+  const panel = $('panel');
+  const stops = [...document.querySelectorAll('.stop')];
+  stops.forEach(b => {
+    const n = (users[b.dataset.skill] || []).filter(el => el.classList.contains('stn')).length;
+    b.querySelector('.n').textContent = n ? '×' + n : '';
+    if (n >= 4) b.parentElement.classList.add('x');
+  });
+  function show(b, fromUser) {
+    if (fromUser) track('skill', { skill: b.dataset.skill });
+    stops.forEach(s => s.setAttribute('aria-pressed', s === b));
+    const list = users[b.dataset.skill] || [];
+    const note = b.dataset.note;
+    const label = b.textContent.replace(/×\d+$/, '').trim();
+    panel.innerHTML = `<div class="ph mono"><span>${b.dataset.lineName} line</span><span>${list.length ? list.length + (list.length === 1 ? ' stop' : ' stops') : 'Resume'}</span></div>
+      <h4>${label}</h4>` + (list.length
+      ? '<ul>' + list.map(el => `<li><a href="#${el.id}">${el.dataset.name}</a></li>`).join('') + '</ul>' + (note ? `<p style="margin-top:10px">${note}</p>` : '')
+      : `<p>${note || 'On my resume.'}</p>`);
+  }
+  stops.forEach(b => {
+    b.addEventListener('click', () => show(b, true));
+    b.addEventListener('mouseenter', () => { if (matchMedia('(hover: hover)').matches) show(b); });
+  });
+  show(stops.find(b => b.dataset.skill === 'python'));
+
+  /* ---------- theme toggle (light by default) ---------- */
+  const themeBtn = $('theme');
+  const paintTheme = () => {
+    const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    themeBtn.textContent = dark ? 'Light' : 'Dark';
+    themeBtn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+  };
+  paintTheme();
+  themeBtn.addEventListener('click', () => {
+    const dark = document.documentElement.getAttribute('data-theme') !== 'dark';
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    try { localStorage.setItem('lochan-theme', dark ? 'dark' : 'light'); } catch (e) {}
+    paintTheme(); measure(); track('theme', { to: dark ? 'dark' : 'light' });
+  });
+
+  /* ---------- analytics events (do nothing until Umami is configured) ---------- */
+  function track(name, data) { try { window.umami && window.umami.track(name, data); } catch (e) {} }
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    const stn = a.closest('[data-name]');
+    if (href.endsWith('.pdf')) track('resume-open');
+    else if (href.startsWith('mailto:')) track('email-click');
+    else if (/^https?:/.test(href)) track('outbound', { to: a.hostname, project: stn ? stn.dataset.name : 'contact' });
+  });
+  let depth = 0;
+  const deepIds = ['line', 'map', 'record', 'terminal'];
+  const depthObs = new IntersectionObserver(es => es.forEach(en => {
+    if (!en.isIntersecting) return;
+    const i = deepIds.indexOf(en.target.id) + 1;
+    if (i > depth) { depth = i; track('reached-' + en.target.id); }
+    depthObs.unobserve(en.target);
+  }), { threshold: 0.15 });
+  deepIds.forEach(id => depthObs.observe($(id)));
+
+  /* ---------- copy email ---------- */
+  const btn = $('copy'), email = $('email');
+  btn.addEventListener('click', () => {
+    const done = () => { track('email-copy'); btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy email', 1800); };
+    const fallback = () => {
+      const r = document.createRange(); r.selectNodeContents(email);
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = 'Selected: press Ctrl+C';
+    };
+    try { navigator.clipboard.writeText(email.textContent).then(done, fallback); } catch (e) { fallback(); }
+  });
+})();
+</script>
+<!--BODY-END-->
+</body>
+</html>
