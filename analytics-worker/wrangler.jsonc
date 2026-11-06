@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "lochan-ref-analytics",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-06",
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "ANALYTICS_DB",
+      "database_name": "lochan-ref-analytics",
+      "database_id": "REPLACE_AFTER_CREATING_D1_DATABASE"
+    }
+  ]
+}
