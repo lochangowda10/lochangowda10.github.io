@@ -1080,6 +1080,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
   /* ---------- analytics events (do nothing until Umami is configured) ---------- */
   function track(name, data) { try { window.umami && window.umami.track(name, data); } catch (e) {} }
+  document.addEventListener('DOMContentLoaded', () => {
+    const ref = new URLSearchParams(window.location.search).get('ref');
+    if (ref && ref.trim()) track('referral-visit', { ref: ref.trim() });
+  });
   document.addEventListener('click', e => {
     const a = e.target.closest('a');
     if (!a) return;
